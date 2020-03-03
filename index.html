@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Beat Wizard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;subset=chinese-traditional" rel="stylesheet">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+	<div class="row py-3">
+    <div class="info col-lg px-lg-3">
+			<div class="make-me-sticky col">
+				<div class="bg-secondary rounded px-3 py-3">
+					<h3 class="display-4 title">Beat Wizard</h3>
+					<hr>
+					<p>輔大資工系的畢業專題<br> 我主要是負責遊戲本體，使用 Unity 製作，用 Unity 做 2D 真的是累人
+					</p>
+					<p>目標是想製作出能在手機上遊玩，能讀取用戶音樂並產生對應譜面的音樂遊戲</p>
+					<p>但是技術不足只能抓出 peak 的拍點，結果遊玩過程就變得不太有趣</p>
+					<div>
+						<div class="alert alert-dark text-center" role="alert">
+							<h4>Download</h4>
+							<div class="d-flex justify-content-around">
+								<a role="button" href="1214f.apk" class="btn btn-success">Android</a>
+								<a role="button" href="win1129.7z" class="btn btn-info">Windows</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-md-3 bg-secondary rounded px-3 py-3">
+					<p>Credit: 朋友的譜面格式解析幫助我理解如何製作拍點判定的邏輯。<br> 
+						<a class="text-warning" href="https://paper.dropbox.com/doc/Yet-another-BMS-spec--Afqa5JzCaqA5LfHQ6Jyq4Yv6Ag-S44x2hNslTUz0jRNDRkbo"> Yet another BMS spec (Login needed) </a> 
+						from <a class="text-warning" href="https://gist.github.com/andy0130tw"> Andy Pan </a>
+					
+				</div>
+			</div>
+		</div>
+    <div class="col-12 col-lg-8 py-auto ">
+			<div class="rounded px-3 py-3 bg-secondary">
+				<h3 class="title">Android ver.</h3>
+				<p><strong>支援的檔案格式：mp3, wav, ogg</strong></p>
+				<p>
+					最後專題發表的版本，比較好看，有遊戲的感覺，但是受制於手機平台的 API 關係，沒有找到適合的音樂分析辦法，所以使用了 Unity 內建的函數，結果無法達到期望，效能也不太好
+					
+				</p>
+				<p>技術不足抓出 peak 的拍點，結果遊玩過程就變得不太有趣</p>
+				<div class="col text-center">
+					<div>
+						<img src="media/android_menu.png" width="200">
+						<img src="media/Android_gameplay_pixel.png" width="200">
+					</div>
+					
+					<div class="row d-inline">
+						<img src="media/android_result.png" class ="d-inline" width="200">
+						<div class ="d-inline align-bottom">
+							<video width="220" class ="d-inline align-bottom pb-2" controls><source src="media/android_gameplay.mp4" type="video/mp4"></video>
+						</div>
+					</div>
+					<div class="col-sm-8 mx-auto alert alert-warning" role="alert">
+						觀看影片請注意流量
+					</div>
+					
+				</div>
+				<h3 class="title">Windows ver.</h3>
+				<p><strong>支援的檔案格式：wav, ogg</strong></p>
+			  <p>比較前期的版本</p>
+				<p>一開始開發用的分析方法是採用 C# 的音訊函式庫 NAudio，但是開發到一半要轉到 Android 測試時才發現 NAudio 只支援 Windows，超尷尬，於是這基本上算是最理想的分析結果只能在電腦上跑(而且這版本受制於 Unity 的檔案支援授權，不能讀最大宗的 MP3 檔)</p>
+				<div class="row d-flex justify-content-around">
+					<div class="row d-inline text-center">
+					<img src="media/nexus6-menu.png" class="d-inline" width="200">
+					<img src="media/nexus6-ingame.png" class="d-inline" width="200">
+					</div>
+					<div>
+						<video width="200" controls><source src="media/windows_gameplay.mp4" type="video/mp4"></video>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js'></script>
+
+  
+
+    <!--<script  src="js/index.js"></script>-->
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+</body>
+
+</html>

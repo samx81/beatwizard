@@ -1,0 +1,20 @@
+body {background: linear-gradient(to right, #485563, #29323c);
+}
+
+/*.info {background-color:gray;}*/
+p{
+	color:white;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.title {
+	color:white;
+	text-shadow: 2px 2px 3px black ;
+}
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 1rem;
+    
+  padding: 0 15px;
+}
+
